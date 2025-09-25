@@ -1,6 +1,7 @@
 import React from "react";
 import Vector1 from "../../assets/vector1.png";
 import Group1 from "../../assets/Group 1.png";
+import Cart from "../Cart/Cart";
 
 const Main = () => {
   return (
@@ -37,6 +38,7 @@ const Main = () => {
           </div>
         </div>
       </div>
+      <Cart></Cart>
     </>
   );
 };
