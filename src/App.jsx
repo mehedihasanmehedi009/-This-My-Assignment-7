@@ -1,8 +1,9 @@
 import "./App.css";
-import React from "react";
+import React, { Suspense } from "react";
 import Nevber from "./Components/Nevber/Nevber";
 import Footer from "./Components/Footer/Footer";
 import Main from "./Components/main/Main";
+const FetchName = fetch("./Cart.json").then((res) => res.json());
 
 const App = () => {
   return (
@@ -10,7 +11,13 @@ const App = () => {
       <div className="bg-gray-300">
         <Nevber></Nevber>
 
-        <Main></Main>
+        <Suspense
+          fallback={
+            <span class="loading loading-spinner text-secondary"></span>
+          }
+        >
+          <Main FetchName={FetchName}></Main>
+        </Suspense>
         <Footer></Footer>
       </div>
     </>

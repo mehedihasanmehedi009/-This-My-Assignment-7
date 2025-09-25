@@ -1,44 +1,35 @@
-import React from "react";
-import Vector1 from "../../assets/vector1.png";
-import Group1 from "../../assets/Group 1.png";
-import Cart from "../Cart/Cart";
+import React, { use } from "react";
 
-const Main = () => {
+import Cart from "../Cart/Cart";
+import Count from "../Count/Count";
+
+const Main = ({ FetchName }) => {
+  const CardLink = use(FetchName);
+  console.log(CardLink);
   return (
     <>
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] my-[50px] p-4">
-          <div className=" bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]  w-full h-60  rounded-md">
-            <div className="flex  justify-between  ">
-              <div>
-                <img className="  md:block hidden  " src={Vector1} alt="" />
-              </div>
-              <div className=" text-stone-200 h-[200px] flex flex-col items-center justify-center ">
-                <h1 className="font-bold md:text-[20px] ">In-Progress</h1>
-                <p className="font-semibold md:text-3xl">0</p>
-              </div>
-              <div className="h-[350px]">
-                <img className="  md:block hidden " src={Group1} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className=" bg-[linear-gradient(90deg,rgba(84,207,104,1),rgba(0,130,122,1)_100%)]   w-full h-60  rounded-md">
-            <div className="flex justify-between  ">
-              <div>
-                <img className="  md:block hidden   " src={Vector1} alt="" />
-              </div>
-              <div className=" text-stone-200 h-[200px] flex  flex-col items-center justify-center ">
-                <h1 className="font-bold md:text-[20px] ">Resolved</h1>
-                <p className="font-semibold md:text-3xl">0</p>
-              </div>
-              <div>
-                <img className="  md:block hidden" src={Group1} alt="" />
-              </div>
-            </div>
+      <Count></Count>
+      <div className="container mx-auto ">
+        <div>
+          {" "}
+          <h1 className="text-2xl md:text-4xl font-bold p-3">Task Status</h1>
+        </div>
+        <div
+          className="grid col-span-3 
+     grid-cols-2 "
+        >
+          {CardLink.map((CARD) => (
+            <Cart CARD={CARD}></Cart>
+          ))}
+        </div>
+        <div>
+          <div className=" flex justify-between container mx-auto mb-4">
+            <h1 className="text-2xl md:text-4xl font-bold p-3">
+              Customer Tickets
+            </h1>
           </div>
         </div>
       </div>
-      <Cart></Cart>
     </>
   );
 };
