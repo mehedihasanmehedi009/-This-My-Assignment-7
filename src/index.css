@@ -1,6 +1,2 @@
 @import "tailwindcss";
 @plugin "daisyui";
-
-.box {
-  @apply rounded-md p-7 text-stone-200 h-[200px] flex  flex-col items-center justify-center;
-}

@@ -53,7 +53,7 @@ const Nevber = () => {
               </ul>
             </div>
             <a className=" md:text-[26px] text-[18px] font-bold  md:mb-3">
-              CS — Ticket System
+              👨‍💻 CS — Ticket System 👨‍💻
             </a>
           </div>
 
