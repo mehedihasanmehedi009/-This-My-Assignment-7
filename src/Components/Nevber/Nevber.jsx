@@ -80,7 +80,7 @@ const Nevber = () => {
                 </li>
               </ul>
             </div>
-            <a className="btn text-[18px] text-white bg-[#422AD5] rounded-md">
+            <a className="btn text-[18px] text-white  bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]  rounded-md">
               + New Ticket
             </a>
           </div>
