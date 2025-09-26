@@ -1,10 +1,11 @@
 import React from "react";
 import Img from "../../assets/ri_calendar-line.png";
-
+import EImg from "../../assets/Ellipse 22.png";
 const Cart = ({ CARD }) => {
   return (
     <div>
       <div
+        // onClick={() => }
         className=" bg-white shadow-md
        cursor-pointer  m-2 rounded-2xl"
       >
@@ -14,7 +15,7 @@ const Cart = ({ CARD }) => {
             <span
               className={`font-bold items-center ${
                 CARD.status == "In-Progress"
-                  ? `  text-yellow-500 bg-amber-100 p-2 rounded-md`
+                  ? " text-yellow-500 bg-amber-100 p-2 rounded-md"
                   : CARD.status == "Open"
                   ? "text-green-600 bg-green-100 p-2  rounded-md"
                   : "text-red-800 bg-red-100 "
