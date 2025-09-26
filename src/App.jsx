@@ -8,7 +8,7 @@ const FetchName = fetch("./Cart.json").then((res) => res.json());
 const App = () => {
   return (
     <>
-      <div className="bg-gray-300">
+      <div className="bg-gray-100">
         <Nevber></Nevber>
 
         <Suspense
