@@ -27,6 +27,9 @@ State সাধারণত parent component এ রাখা হয়,
 
 React এ ইভেন্ট হ্যান্ডলিং একদম HTML এর মতো, কিন্তু camelCase ব্যবহার করতে হয়।
 react এ দুটি ইভেন্ট হ্যান্ডলিং ব্যাবহার করা হয় তাহলো
+
 (১) <button onClick={handleClick}>Click Me</button>
+
 (২)<button onClick={()=>handleClick()}>Click Me</button>
+
 এখানে onClick হলো ইভেন্ট, আর handleClick হলো ফাংশন যেটা চালু হবে যখন ক্লিক করা হবে।
