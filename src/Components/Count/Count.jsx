@@ -1,7 +1,6 @@
-import React from "react";
 import Vector1 from "../../assets/vector1.png";
 import Group1 from "../../assets/Group 1.png";
-const Count = () => {
+const Count = ({ Card }) => {
   return (
     <div>
       <div className="container mx-auto">
@@ -17,7 +16,7 @@ const Count = () => {
               </div>
               <div className=" text-stone-200 h-[240px] flex  flex-col items-center justify-center ">
                 <h1 className="font-bold  text-3xl ">In-Progress</h1>
-                <p className="font-semibold text-4xl">0</p>
+                <p className="font-semibold text-4xl">{Card.length}</p>
               </div>
               <div>
                 <img
@@ -43,7 +42,7 @@ const Count = () => {
               </div>
               <div>
                 <img
-                  className="  md:block hidden  w-[290px]"
+                  className=" md:block hidden   w-[290px]"
                   src={Group1}
                   alt=""
                 />

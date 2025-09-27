@@ -3,7 +3,7 @@ import React from "react";
 const Nevber = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm  ">
+      <div className="navbar md:bg-white bg-blue-200 shadow-sm  ">
         <div className=" container  mx-auto   ">
           <div className="navbar-start">
             <div className="dropdown">

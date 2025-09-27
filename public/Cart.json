@@ -31,7 +31,7 @@
     "title": "Incorrect Billing Address",
     "description": "Customer’s billing address shows a different city. They updated it but it still displays the old one.",
     "customer": "Emily Davis",
-    "priority": "LOW PRIORITY",
+    "priority": "LOW  PRIORITY",
     "status": "Open",
     "createdAt": "2025-09-24"
   },
@@ -67,7 +67,7 @@
     "title": "Missing Order Confirmation Email",
     "description": "Customer placed an order but didn't receive a confirmation email even though payment succeeded.",
     "customer": "Olivia Martinez",
-    "priority": "LOW PRIORITY",
+    "priority": "LOW  PRIORITY",
     "status": "Open",
     "createdAt": "2025-09-24"
   },
