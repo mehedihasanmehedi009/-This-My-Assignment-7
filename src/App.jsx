@@ -1,4 +1,5 @@
 import "./App.css";
+import { ToastContainer } from "react-toastify";
 import React, { Suspense, useState } from "react";
 import Nevber from "./Components/Nevber/Nevber";
 import Footer from "./Components/Footer/Footer";
@@ -27,7 +28,7 @@ const App = () => {
           ></Main>
         </Suspense>
       </div>
-      <Footer></Footer>{" "}
+      <Footer></Footer> <ToastContainer />
     </>
   );
 };

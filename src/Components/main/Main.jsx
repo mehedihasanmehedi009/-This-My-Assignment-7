@@ -2,13 +2,14 @@ import React, { use } from "react";
 import Cart from "../Cart/Cart";
 import Count from "../Count/Count";
 import SortCard from "../SortCard/SortCard";
+import { toast } from "react-toastify";
 
 const Main = ({ FetchName, setCard, Card, setCardPlayer, CardPlayer }) => {
   const CardLink = use(FetchName);
 
   // console.log(CardPlayer);
   const HandleAdd = (b) => {
-    alert("Complete");
+    toast("Complete");
     const newCard = [...Card, b];
     console.log(newCard);
     setCard(newCard);
