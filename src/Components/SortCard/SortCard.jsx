@@ -17,7 +17,7 @@ const SortCard = ({ CardPlayer }) => {
           </div>
         </div>
       ))}
-      <div className="mt-5 ml-8 ">
+      <div className="mt-5 ml-8 mb-8 ">
         <h1 className="  text-2xl  md:text-black   md:text-3xl font-bold       ">
           Resolved Task
         </h1>

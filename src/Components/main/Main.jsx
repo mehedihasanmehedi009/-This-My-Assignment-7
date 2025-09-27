@@ -9,7 +9,7 @@ const Main = ({ FetchName, setCard, Card, setCardPlayer, CardPlayer }) => {
 
   // console.log(CardPlayer);
   const HandleAdd = (b) => {
-    toast("Complete");
+    toast(" Complete... ");
     const newCard = [...Card, b];
     console.log(newCard);
     setCard(newCard);
